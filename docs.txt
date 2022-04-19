@@ -1,0 +1,2 @@
+#METHODOLOGY
+Regressive enhancement methodology is a guiding principle with the aim of making web pages accessible to a variety of browsers, by developing from a baseline of full features, and then replicating those full features throughout the regression to less capable browsers.
