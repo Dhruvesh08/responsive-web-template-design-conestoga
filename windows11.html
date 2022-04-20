@@ -4,28 +4,16 @@
   <meta charset="utf-8">
   <title>Typography</title>
   <!-- Prevent smartphones from scaling pages down -->
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1">
-  <meta name="Keywords"
-    content="laptops, xbox, software, office" />
-  <meta name="Description"
-    content="Software and hardware website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Keywords" content="laptops, xbox, software, office" />
+  <meta name="Description" content="Software and hardware website" />
   <!-- Normalize.css makes browsers render all elements more consistently and in line with modern standards. -->
-  <link rel="stylesheet"
-    type="text/css"
-    href="css/normalize.css">
-  <link rel="stylesheet"
-    type="text/css"
-    href="css/page.css">
-  <link rel="stylesheet"
-    type="text/css"
-    href="css/xbox.css">
-  <link rel="stylesheet"
-    type="text/css"
-    href="css/xbox-carousel.css">
-  <link rel="stylesheet"
-    type="text/css"
-    href="css/xbox-gallery.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/xbox.css">
+  <link rel="stylesheet" type="text/css" href="css/xbox-carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/xbox-gallery.css">
+  <link rel="stylesheet" type="text/css" href="css/windows11.css">
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -37,20 +25,16 @@
   <header>
     <div class="container hd-container">
       <div class="logo-block">
-        <img alt="logo"
-          src="img/logo.png">
+        <img alt="logo" src="img/logo.png">
       </div>
-      <nav id="mySidebar"
-        class="right-menu sidebar width-sidebar">
+      <nav id="mySidebar" class="right-menu sidebar width-sidebar">
         <ul>
-          <li class="nav-item"><a href="javacript:void(0)"
-              class="closebtn"
-              onclick="closeNav()">X</a></li>
+          <li class="nav-item"><a href="javacript:void(0)" class="closebtn" onclick="closeNav()">X</a></li>
           <li class="nav-item"><a href="index.html">Home</a></li>
           <li class="nav-item"><a href="microsoft365.html">Microsoft 365</a></li>
           <li class="nav-item"><a href="office.html">Office</a></li>
           <li class="nav-item"><a href="laptops.html">Laptops</a></li>
-                  <li class="nav-item"><a href="xbox.html">Xbox</a></li>
+          <li class="nav-item"><a href="xbox.html">Xbox</a></li>
           <li class="nav-item"><a href="windows10.html">windows10</a></li>
           <li class="nav-item"><a href="windows11.html">windows11</a></li>
 
@@ -58,179 +42,200 @@
         </ul>
       </nav>
       <div id="main">
-        <button class="openbtn"
-          onclick="openNav()"><img src="icons/menu.png"
-            width="30px"></button>
+        <button class="openbtn" onclick="openNav()"><img src="icons/menu.png" width="30px"></button>
       </div>
     </div>
   </header>
 
-  <section class="banner">
-    <div class="slideshow-container">
 
-      <div class="mySlides carousel-1-color">
-        <div class="numbertext">1 / 3</div>
-        <div class="carousel-grid-container">
-          <div class="carousel-grid-item-1">
-            <h2>Game like a <i>pro</i>, on the <i>go</i>
-            </h2>
-          </div>
-          <div class="carousel-grid-item-2 rgt-book">
-            <picture>
-              <img src="img/xbox/carousel1/Wallpaper_for_Laptop_Background_70_images_m68lhm_c_scale,w_2040.jpg"
-                alt="">
-            </picture>
-          </div>
-        </div>
+
+
+  <div class="main-section">
+
+
+    <div id="sequence" class="seq">
+
+      <div class="seq-screen">
+        <ul class="seq-canvas">
+          <li class="seq-in">
+            <div class="seq-model">
+              <img data-seq class="main-image" src="./img/w-11/icons8-windows-11-480.png" alt="img" />
+            </div>
+
+            <div class="seq-title">
+              <h2 data-seq>Powered by Sequence.js</h2>
+              <h3 data-seq>The responsive CSS animation framework</h3>
+            </div>
+          </li>
+
+          <li>
+            <div class="seq-model">
+              <img data-seq class="main-image" src="./img/w-11/icons8-microsoft-edge-480.png" alt="img" />
+            </div>
+
+            <div class="seq-title">
+              <h2 data-seq>Create Unique Animated Themes</h2>
+              <h3 data-seq>For sliders, presentations, <br />banners, and other step-based applications</h3>
+            </div>
+          </li>
+
+          <li>
+            <div class="seq-model">
+              <img data-seq class="main-image" src="./img/w-11/icons8-xbox-480.png" alt="img" />
+            </div>
+
+            <div class="seq-title">
+              <h2 data-seq>Rapid Development of Step-Based Applications</h2>
+              <h3 data-seq>All of the JavaScript functionality you need built-in</h3>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="mySlides carousel-2-color">
-        <div class="numbertext">2 / 3</div>
-        <div class="carousel-grid-container">
-          <div class="carousel-grid-item-1">
-            <h2>Engage in a virtual space that appears <i>realistic</i>
-            </h2>
-          </div>
-          <div class="rgt-book carousel-grid-item-2">
-            <picture>
-              <img src="img/xbox/carousel2/oculus-model_z1umx3_c_scale,w_1600.jpg"
-                alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
+      <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+        <button type="button" class="seq-prev" aria-label="Previous">Previous</button>
+        <button type="button" class="seq-next" aria-label="Next">Next</button>
+      </fieldset>
 
-      <div class="mySlides carousel-3-color">
-        <div class="numbertext">3 / 3</div>
-        <div class="carousel-grid-container">
-          <div class="carousel-grid-item-1">
-            <h2>Rule the gaming world
-            </h2>
-          </div>
-          <div class="rgt-book carousel-grid-item-2">
-            <picture>
-              <source media="(max-width: 481px)"
-                srcset="
-img/xbox/carousel3/chris-taljaard-S__3xvlGDe8-unsplash_iz3p6r_c_scale,w_2040_cropped_mobile.jpg 2040w">
-              <source media="(max-width: 960px)"
-                srcset="
-img/xbox/carousel3/chris-taljaard-S__3xvlGDe8-unsplash_iz3p6r_c_scale,w_2040_cropped_mobile.jpg 2040w">
-              <img srcset="
-img/xbox/carousel3/chris-taljaard-S__3xvlGDe8-unsplash_iz3p6r_c_scale,w_2040.jpg 2040w"
-                src="img/xbox/carousel3/chris-taljaard-S__3xvlGDe8-unsplash_iz3p6r_c_scale,w_2040.jpg"
-                alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
-
-      <br>
-      <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
+      <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+        <li><a href="#step1" rel="step1" title="Go to slide 1"><img class="nav-icon"
+              src="./img/w-11/icons8-windows-11-480.png" /></a>
+        </li>
+        <li><a href="#step2" rel="step2" title="Go to slide 2"><img class="nav-icon"
+              src="./img/w-11/icons8-microsoft-edge-480.png" /></a>
+        </li>
+        <li><a href="#step3" rel="step3" title="Go to slide 3"><img class="nav-icon"
+              src="./img/w-11/icons8-xbox-480.png" /></a>
+        </li>
+      </ul>
     </div>
-  </section>
 
 
-  <main class="main-section">
+    <section class="intro">
+      <h1 class="intro__title">
+        Windows 11 Installation Assistant
+      </h1>
+      <p class="intro__subtitle">
+        This is the best option for installing Windows 11 on the device you’re currently using. Click Download Now to
+        get started.
+      </p>
+      <a href="#" class="button">Download Now</a>
+      <img class="intro__illustration" src="./img/w-11/windows-11-start_print.jpg" alt="" />
+    </section>
+    <section id="features" class="features">
+      <h2 class="visuallyhidden">Features</h2>
+      <ul class="features__list">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="116px" height="116px">
+            <path fill="#1976D2"
+              d="M13.3,15.1C8.7,17.9,6,21.9,6,21.9s0.7-8.4,7.3-13.3c2.6-2,6.2-3.6,11-3.6c1.8,0,5.6,0.3,9,2.4s4.8,3.8,6.4,6.3c0.7,1.1,1.2,2.5,1.5,3.8c0.6,2.5,0.7,5.6,0.7,5.6V27H17c0,0-0.1,8.1,11.2,8.1c3.9,0,5.3-0.6,6.6-1c2-0.6,4.2-2.1,4.2-2.1v8c0,0-4.9,3-11.9,3c-2,0-4-0.2-6-0.8c-1.7-0.6-5.4-2-7.8-5.5c-0.9-1.2-1.8-2.9-2.3-4.5c-0.5-1.7-0.5-3.4-0.5-4.3c0-3.5,1.2-6.8,3.3-9.2C16.6,15.6,20,14,20,14s-3,2.8-3,6h14c0,0,0.1-8-7.7-8C20.1,12,16.1,13.4,13.3,15.1z" />
+          </svg>
+          <p><strong>Engaging audio content</strong> on a wide range on topics.</p>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="116px" height="116px">
+            <path fill="#0077d4"
+              d="M7,6h15c0.552,0,1,0.448,1,1v15c0,0.552-0.448,1-1,1H7c-0.552,0-1-0.448-1-1V7	C6,6.448,6.448,6,7,6z" />
+            <path fill="#0077d4"
+              d="M25.042,21.958V7c0-0.552,0.448-1,1-1H41c0.552,0,1,0.448,1,1v14.958	c0,0.552-0.448,1-1,1H26.042C25.489,22.958,25.042,22.511,25.042,21.958z" />
+            <path fill="#0077d4"
+              d="M7,25h15c0.552,0,1,0.448,1,1v15c0,0.552-0.448,1-1,1H7c-0.552,0-1-0.448-1-1V26	C6,25.448,6.448,25,7,25z" />
+            <path fill="#0077d4"
+              d="M25,41V26c0-0.552,0.448-1,1-1h15c0.552,0,1,0.448,1,1v15c0,0.552-0.448,1-1,1H26	C25.448,42,25,41.552,25,41z" />
+          </svg>
+          <p><strong>400+ video lessons</strong> from professional teachers.</p>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="116px" height="116px">
+            <radialGradient id="2Jwv7LuZrao5GsFL~0k11a" cx="24" cy="18.435" r="40.735" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#dfe9f2" />
+              <stop offset=".543" stop-color="#d6e0e9" />
+              <stop offset="1" stop-color="#bfc8d1" />
+            </radialGradient>
+            <path fill="url(#2Jwv7LuZrao5GsFL~0k11a)"
+              d="M44,24c0,4.37-1.4,8.41-3.79,11.7c-0.66,0.93-1.41,1.8-2.23,2.59C34.37,41.82,29.44,44,24,44	s-10.37-2.18-13.98-5.71C9.2,37.5,8.45,36.63,7.79,35.7C5.4,32.41,4,28.37,4,24c0-5.69,2.37-10.81,6.18-14.45	c1-0.96,2.1-1.81,3.28-2.54C16.52,5.1,20.13,4,24,4s7.48,1.1,10.54,3.01c1.18,0.73,2.28,1.58,3.28,2.54C41.63,13.19,44,18.31,44,24z" />
+            <radialGradient id="2Jwv7LuZrao5GsFL~0k11b" cx="23.891" cy="14.717" r="19.79"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#4caf50" />
+              <stop offset=".489" stop-color="#4aaf50" />
+              <stop offset=".665" stop-color="#43ad50" />
+              <stop offset=".79" stop-color="#38aa50" />
+              <stop offset=".892" stop-color="#27a550" />
+              <stop offset=".978" stop-color="#11a050" />
+              <stop offset="1" stop-color="#0a9e50" />
+            </radialGradient>
+            <path fill="url(#2Jwv7LuZrao5GsFL~0k11b)"
+              d="M40.21,35.7c-0.66,0.93-1.41,1.8-2.23,2.59c-0.07-0.61-0.31-2.47-0.98-3.79	c-1.5-3-8-11-13-14.5c-5,3.5-11.5,11.5-13,14.5c-0.67,1.32-0.91,3.18-0.98,3.79C9.2,37.5,8.45,36.63,7.79,35.7	C7.76,35.08,7.8,34.2,8,33c0.74-4.47,8.5-16,11-18c-3.4-3.4-6.8-4.91-8.82-5.45c1-0.96,2.1-1.81,3.28-2.54	C19.15,7.1,22.05,9.03,24,10c1.95-0.97,4.85-2.9,10.54-2.99c1.18,0.73,2.28,1.58,3.28,2.54C35.8,10.09,32.4,11.6,29,15	c2.5,2,10.26,13.53,11,18C40.2,34.2,40.24,35.08,40.21,35.7z" />
+          </svg>
+          <p><strong>Weekly tips and advice</strong> to help you improve your English level.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="how-it-works" class="grow">
+      <h2 class="section__title grow__title">Switch Made Easy</h2>
+      <p>
+        Get support for Windows 10 or Windows 7
+      </p>
 
-    <div class="container">
-      <!-- Photo Grid -->
-      <div class="myGallery">
 
-        <div class="item item1">
-          <div class="item1-text">
-            <p class="item-heading">The Elder Scrolls Online
-            </p>
-            <p class="item-text">Morrowind zone now free for all ESO players</p>
-            <a href="#"
-              class="item1-link">LEARN MORE >></a>
-          </div>
-          <div class="overflow-hidden">
-            <picture>
-              <source media="(min-width: 800px)"
-                srcset="img/xbox/flex-gal/apps.13845.13528939670494828.9f1c9646-ec16-415c-89c6-43719916ff4f.jpg">
-              <source media="(min-width: 0)"
-                srcset="img/xbox/flex-gal/apps.13845.13528939670494828.9f1c9646-ec16-415c-89c6-43719916ff4f_cropped_mobile.jpg">
-              <img src="img/xbox/flex-gal/apps.13845.13528939670494828.9f1c9646-ec16-415c-89c6-43719916ff4f.jpg"
-                alt="">
-            </picture>
-          </div>
-        </div>
-        <div class="item item2">
-          <img src="img/xbox/flex-gal/44a664cc-41f7-460b-9597-0257f60d254b.jpg" />
-          <span class="caption">
-            <p class="item-heading">Hello Neighbor 2</p>
-            <p class="item-text">Pre-order and get exclusive Beta access!</p>
-            <a href="#"
-              class="item2-link">LEARN MORE >></a>
-          </span>
-        </div>
-        <div class="item item3">
-          <img src="img/xbox/flex-gal/bfa9991e-e6fc-48a4-8cad-3b2e196d655e.jpg" />
-          <span class="caption">
-            <p class="item-heading">Age of Empires II: Definitive Edition</p>
-            <p class="item-text">Get the all-new Dynasties of India expansion</p>
-            <a href="#"
-              class="item3-link">PRE-ORDER NOW >></a>
-          </span>
-        </div>
-
-        <div class="item item4">
-          <div class="item4-text">
-            <p class="item-heading">STRANGER OF PARADISE
-            </p>
-            <p class="item-text">The new action RPG from Team Ninja, Koei Tecmo, & Square Enix has arrived</p>
-            <a href="#"
-              class="item4-link">GET IT NOW >></a>
-          </div>
-          <div class="overflow-hidden">
-            <picture>
-              <source media="(min-width: 800px)"
-                srcset="img/xbox/flex-gal/6459f081-78e5-495c-8104-eec9a29b5d13.jpg">
-              <source media="(min-width: 0)"
-                srcset="img/xbox/flex-gal/6459f081-78e5-495c-8104-eec9a29b5d13_cropped_mobile.jpg">
-              <img src="img/xbox/flex-gal/6459f081-78e5-495c-8104-eec9a29b5d13.jpg"
-                alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
-
-      <div class="sec-block">
-
-        <div class="sc-lf-block">
-          <h2 class="title">Xbox Game Pass</h2>
-          <p>Immerse yourself in a library of over 100 high-quality games. Enjoy the benefits of Xbox Live Gold, EA
-            Play, and play across devices from the cloud when you join Xbox Game Pass Ultimate.</p>
-          <strong>With Xbox Game Pass you and the people you share with can:</strong>
-          <ul>
-            <li>PLAY 100+ HIGH-QUALITY GAMES</li>
-            <li>New games added all the time, including day one releases</li>
-            <li>Free Perks and exclusive member discounts</li>
-            <li>Play on PCs, phones & tablets from the cloud</li>
-            <li>EA Play membership included</li>
-            <li>Xbox Live Gold included</li>
-
-          </ul>
-          <i>*Subscription continues automatically at $16.99/mo. unless cancelled through your Microsoft Account. <a
-              href="">See terms.</a></i>
-        </div>
-        <aside class="sc-right-block">
-          <strong><strike>CAD $16.99/month</strike> CAD $1.00/month
-            94% off</strong>
-          <a class="dn-btn"
-            href="#">Buy and Download</a>
-          <a class="nm-link"
-            href="#">Try it free for one month</a>
-          <span class="note-info">Subscription automatically renews. Cancel anytime to stop future charges**</span>
-
-        </aside>
-      </div>
-
+    </section>
+    <div class="arrow-1"></div>
+    <section class="get-feedback">
+      <h2 class="section__title get-feedback__title">
+        Get quality feedback
+      </h2>
+      <p>
+        We are here for you. Participate in the weekly live events, get the tools and resources you need, and find
+        friendships with people that have the same goal as you.
+      </p>
+      
+    </section>
+    <div class="arrow-2"></div>
+    <section class="learning">
+      <h2 class="section__title learning__title">
+        Get a fresh perspective
+      </h2>
+      <p>
+        Hop on a call. Find some answers. Finish that paper. When you’ve got a lot to do, snap can help you stay organized with ease.
+      </p>
+     
+    </section>
+    <div id="get-started" class="get-started">
+      <ul>
+        <li>
+          <svg width="80" height="56" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <use xlink:href="#user"></use>
+          </svg>
+          <p><strong class="counter community-members">1.2</strong><strong>K+</strong></p>
+          <p>New Members</p>
+        </li>
+        <li>
+          <svg width="56" height="65" viewBox="0 0 56 65" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <use xlink:href="#article"></use>
+          </svg>
+          <p><strong class="counter number-of-pages">1.9</strong><strong>K+</strong></p>
+          <p>Active Users</p>
+        </li>
+      </ul>
     </div>
+    <section class="start-learning">
+      <h2 class="section__title">
+        Ready To Switch to Windows11 ?
+      </h2>
+      <a href="#" class="button">Get Started</a>
+
+
+    </section>
+
+  </div>
+
+
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/imagesloaded.pkgd.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/hammer.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/sequence.min.js"></script>
+
   </main>
 
 
@@ -253,6 +258,7 @@ img/xbox/carousel3/chris-taljaard-S__3xvlGDe8-unsplash_iz3p6r_c_scale,w_2040.jpg
   <script src="js/navActive.js"></script>
   <script src="js/carouselSlideshow.js"></script>
   <script src="js/navResponsive.js"></script>
+  <script src="js/windows11.js"></script>
 </body>
 
 </html>
